@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0672878BB525ACCDCF877637 /* Pods_Zettel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F4DADA85E5547686FB1955 /* Pods_Zettel.framework */; };
+		2563CAF42714C387000842D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563CAF32714C387000842D4 /* AppDelegate.swift */; };
+		2563CAF82714C387000842D4 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563CAF72714C387000842D4 /* NotesViewController.swift */; };
+		2563CAFD2714C393000842D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2563CAFC2714C393000842D4 /* Assets.xcassets */; };
+		2563CB002714C393000842D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2563CAFE2714C393000842D4 /* LaunchScreen.storyboard */; };
+		2563CB082714C811000842D4 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2563CB072714C811000842D4 /* AppFactory.swift */; };
+		52009BA127638C8400485600 /* SaveWithUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52009BA027638C8400485600 /* SaveWithUserDefaults.swift */; };
+		520CAF7B2764FEB30001EB16 /* TagNotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CAF792764FEB30001EB16 /* TagNotesCollectionViewCell.swift */; };
+		520CAF7C2764FEB30001EB16 /* TagNotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520CAF7A2764FEB30001EB16 /* TagNotesCollectionViewCell.xib */; };
+		520DC8A7276BB90F00E6716C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520DC8A6276BB90F00E6716C /* GoogleService-Info.plist */; };
+		5276C869275BCE1700186BBB /* TagCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C868275BCE1700186BBB /* TagCreator.swift */; };
+		5276C88C275BFC2C00186BBB /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C882275BFC2C00186BBB /* NoteViewController.swift */; };
+		5276C88D275BFC2C00186BBB /* TagCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C884275BFC2C00186BBB /* TagCollectionViewController.swift */; };
+		5276C88E275BFC2C00186BBB /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C885275BFC2C00186BBB /* TagCollectionViewCell.swift */; };
+		5276C88F275BFC2C00186BBB /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5276C886275BFC2C00186BBB /* TagCollectionViewCell.xib */; };
+		5276C890275BFC2D00186BBB /* TagsDropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C888275BFC2C00186BBB /* TagsDropDownMenu.swift */; };
+		5276C891275BFC2D00186BBB /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C889275BFC2C00186BBB /* TagCell.swift */; };
+		5276C892275BFC2D00186BBB /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5276C88A275BFC2C00186BBB /* TagCell.xib */; };
+		5276C893275BFC2D00186BBB /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276C88B275BFC2C00186BBB /* HeaderTextField.swift */; };
+		5295F8D82741B54B002DE3D8 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295F8D12741B54B002DE3D8 /* NoteManager.swift */; };
+		5295F8D92741B54B002DE3D8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295F8D22741B54B002DE3D8 /* Note.swift */; };
+		5295F8DA2741B54B002DE3D8 /* TagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295F8D42741B54B002DE3D8 /* TagManager.swift */; };
+		5295F8DB2741B54B002DE3D8 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295F8D52741B54B002DE3D8 /* Tag.swift */; };
+		5295F8DC2741B54B002DE3D8 /* testFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295F8D62741B54B002DE3D8 /* testFile.swift */; };
+		5295F8E02741B649002DE3D8 /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295F8DF2741B649002DE3D8 /* NotesService.swift */; };
+		52DC97532742D8DF003C4E33 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC97512742D8DF003C4E33 /* Color.swift */; };
+		52DC97542742D8DF003C4E33 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC97522742D8DF003C4E33 /* ColorManager.swift */; };
+		52E3878A27679B7000CEE45B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3878927679B6F00CEE45B /* LoginViewController.swift */; };
+		52E3878D27679B8000CEE45B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3878C27679B8000CEE45B /* SettingsController.swift */; };
+		9D41C2C3272E7DA300C19788 /* TagMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41C2C2272E7DA300C19788 /* TagMenuViewController.swift */; };
+		9D41C2C5272E7DEA00C19788 /* TagItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D41C2C4272E7DEA00C19788 /* TagItem.xib */; };
+		9D41C2C7272E7DEF00C19788 /* TagItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41C2C6272E7DEF00C19788 /* TagItem.swift */; };
+		9D41C2CB272E7DFA00C19788 /* TagNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41C2CA272E7DFA00C19788 /* TagNotes.swift */; };
+		9D41C2D2272E938100C19788 /* TagNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41C2D0272E938100C19788 /* TagNote.swift */; };
+		9D41C2D3272E938100C19788 /* TagNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D41C2D1272E938100C19788 /* TagNote.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2563CAF02714C387000842D4 /* Zettel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zettel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2563CAF32714C387000842D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2563CAF72714C387000842D4 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		2563CAFC2714C393000842D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2563CAFF2714C393000842D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2563CB012714C393000842D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2563CB072714C811000842D4 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		49F4DADA85E5547686FB1955 /* Pods_Zettel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zettel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52009BA027638C8400485600 /* SaveWithUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWithUserDefaults.swift; sourceTree = "<group>"; };
+		520CAF792764FEB30001EB16 /* TagNotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		520CAF7A2764FEB30001EB16 /* TagNotesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagNotesCollectionViewCell.xib; sourceTree = "<group>"; };
+		520DC8A6276BB90F00E6716C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5276C868275BCE1700186BBB /* TagCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCreator.swift; sourceTree = "<group>"; };
+		5276C882275BFC2C00186BBB /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		5276C884275BFC2C00186BBB /* TagCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionViewController.swift; sourceTree = "<group>"; };
+		5276C885275BFC2C00186BBB /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		5276C886275BFC2C00186BBB /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		5276C888275BFC2C00186BBB /* TagsDropDownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsDropDownMenu.swift; sourceTree = "<group>"; };
+		5276C889275BFC2C00186BBB /* TagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		5276C88A275BFC2C00186BBB /* TagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
+		5276C88B275BFC2C00186BBB /* HeaderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
+		5295F8D12741B54B002DE3D8 /* NoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
+		5295F8D22741B54B002DE3D8 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		5295F8D42741B54B002DE3D8 /* TagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagManager.swift; sourceTree = "<group>"; };
+		5295F8D52741B54B002DE3D8 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		5295F8D62741B54B002DE3D8 /* testFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testFile.swift; sourceTree = "<group>"; };
+		5295F8DF2741B649002DE3D8 /* NotesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
+		52DC97512742D8DF003C4E33 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		52DC97522742D8DF003C4E33 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		52E3878927679B6F00CEE45B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52E3878C27679B8000CEE45B /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		716716278323CF7E86015BA1 /* Pods-Zettel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zettel.debug.xcconfig"; path = "Target Support Files/Pods-Zettel/Pods-Zettel.debug.xcconfig"; sourceTree = "<group>"; };
+		9D41C2C2272E7DA300C19788 /* TagMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagMenuViewController.swift; sourceTree = "<group>"; };
+		9D41C2C4272E7DEA00C19788 /* TagItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagItem.xib; sourceTree = "<group>"; };
+		9D41C2C6272E7DEF00C19788 /* TagItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagItem.swift; sourceTree = "<group>"; };
+		9D41C2CA272E7DFA00C19788 /* TagNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagNotes.swift; sourceTree = "<group>"; };
+		9D41C2D0272E938100C19788 /* TagNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagNote.swift; sourceTree = "<group>"; };
+		9D41C2D1272E938100C19788 /* TagNote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagNote.xib; sourceTree = "<group>"; };
+		B0040E4343734B3D56CAD898 /* Pods-Zettel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zettel.release.xcconfig"; path = "Target Support Files/Pods-Zettel/Pods-Zettel.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2563CAED2714C387000842D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0672878BB525ACCDCF877637 /* Pods_Zettel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2563CAE72714C386000842D4 = {
+			isa = PBXGroup;
+			children = (
+				2563CAF22714C387000842D4 /* Zettel */,
+				2563CAF12714C387000842D4 /* Products */,
+				6DE76B72A1FBC99CACA929FD /* Pods */,
+				9F2632639D0B33EECB3AC56F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2563CAF12714C387000842D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2563CAF02714C387000842D4 /* Zettel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2563CAF22714C387000842D4 /* Zettel */ = {
+			isa = PBXGroup;
+			children = (
+				520DC8A6276BB90F00E6716C /* GoogleService-Info.plist */,
+				52E3878B27679B8000CEE45B /* Settings */,
+				52E3878827679B6F00CEE45B /* Login */,
+				5276C881275BFC2C00186BBB /* NoteView */,
+				52DC97502742D8DF003C4E33 /* ColorBackend */,
+				5295F8DE2741B649002DE3D8 /* Storage */,
+				5295F8CF2741B54B002DE3D8 /* Models */,
+				2563CB072714C811000842D4 /* AppFactory.swift */,
+				2563CAF32714C387000842D4 /* AppDelegate.swift */,
+				2563CAF72714C387000842D4 /* NotesViewController.swift */,
+				2563CAFC2714C393000842D4 /* Assets.xcassets */,
+				2563CAFE2714C393000842D4 /* LaunchScreen.storyboard */,
+				2563CB012714C393000842D4 /* Info.plist */,
+				9D41C2DA272EA70F00C19788 /* TagViewCollection */,
+			);
+			path = Zettel;
+			sourceTree = "<group>";
+		};
+		5276C881275BFC2C00186BBB /* NoteView */ = {
+			isa = PBXGroup;
+			children = (
+				5276C882275BFC2C00186BBB /* NoteViewController.swift */,
+				5276C883275BFC2C00186BBB /* TagLine */,
+				5276C887275BFC2C00186BBB /* TagsDropdown */,
+				5276C88B275BFC2C00186BBB /* HeaderTextField.swift */,
+			);
+			path = NoteView;
+			sourceTree = "<group>";
+		};
+		5276C883275BFC2C00186BBB /* TagLine */ = {
+			isa = PBXGroup;
+			children = (
+				5276C884275BFC2C00186BBB /* TagCollectionViewController.swift */,
+				5276C885275BFC2C00186BBB /* TagCollectionViewCell.swift */,
+				5276C886275BFC2C00186BBB /* TagCollectionViewCell.xib */,
+			);
+			path = TagLine;
+			sourceTree = "<group>";
+		};
+		5276C887275BFC2C00186BBB /* TagsDropdown */ = {
+			isa = PBXGroup;
+			children = (
+				5276C888275BFC2C00186BBB /* TagsDropDownMenu.swift */,
+				5276C889275BFC2C00186BBB /* TagCell.swift */,
+				5276C88A275BFC2C00186BBB /* TagCell.xib */,
+			);
+			path = TagsDropdown;
+			sourceTree = "<group>";
+		};
+		5295F8CF2741B54B002DE3D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5295F8D02741B54B002DE3D8 /* NotesBackend */,
+				5295F8D32741B54B002DE3D8 /* TagsBackend */,
+				5295F8D62741B54B002DE3D8 /* testFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5295F8D02741B54B002DE3D8 /* NotesBackend */ = {
+			isa = PBXGroup;
+			children = (
+				5295F8D12741B54B002DE3D8 /* NoteManager.swift */,
+				5295F8D22741B54B002DE3D8 /* Note.swift */,
+			);
+			path = NotesBackend;
+			sourceTree = "<group>";
+		};
+		5295F8D32741B54B002DE3D8 /* TagsBackend */ = {
+			isa = PBXGroup;
+			children = (
+				5295F8D42741B54B002DE3D8 /* TagManager.swift */,
+				5295F8D52741B54B002DE3D8 /* Tag.swift */,
+			);
+			path = TagsBackend;
+			sourceTree = "<group>";
+		};
+		5295F8DE2741B649002DE3D8 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				5295F8DF2741B649002DE3D8 /* NotesService.swift */,
+				52009BA027638C8400485600 /* SaveWithUserDefaults.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		52DC97502742D8DF003C4E33 /* ColorBackend */ = {
+			isa = PBXGroup;
+			children = (
+				52DC97512742D8DF003C4E33 /* Color.swift */,
+				52DC97522742D8DF003C4E33 /* ColorManager.swift */,
+			);
+			path = ColorBackend;
+			sourceTree = "<group>";
+		};
+		52E3878827679B6F00CEE45B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				52E3878927679B6F00CEE45B /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		52E3878B27679B8000CEE45B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				52E3878C27679B8000CEE45B /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6DE76B72A1FBC99CACA929FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				716716278323CF7E86015BA1 /* Pods-Zettel.debug.xcconfig */,
+				B0040E4343734B3D56CAD898 /* Pods-Zettel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D41C2DA272EA70F00C19788 /* TagViewCollection */ = {
+			isa = PBXGroup;
+			children = (
+				5276C868275BCE1700186BBB /* TagCreator.swift */,
+				9D41C2DB272EA72800C19788 /* NoteListViewCollection */,
+				9D41C2C2272E7DA300C19788 /* TagMenuViewController.swift */,
+				9D41C2C4272E7DEA00C19788 /* TagItem.xib */,
+				9D41C2C6272E7DEF00C19788 /* TagItem.swift */,
+			);
+			path = TagViewCollection;
+			sourceTree = "<group>";
+		};
+		9D41C2DB272EA72800C19788 /* NoteListViewCollection */ = {
+			isa = PBXGroup;
+			children = (
+				9D41C2CA272E7DFA00C19788 /* TagNotes.swift */,
+				9D41C2D1272E938100C19788 /* TagNote.xib */,
+				9D41C2D0272E938100C19788 /* TagNote.swift */,
+				520CAF792764FEB30001EB16 /* TagNotesCollectionViewCell.swift */,
+				520CAF7A2764FEB30001EB16 /* TagNotesCollectionViewCell.xib */,
+			);
+			path = NoteListViewCollection;
+			sourceTree = "<group>";
+		};
+		9F2632639D0B33EECB3AC56F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49F4DADA85E5547686FB1955 /* Pods_Zettel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2563CAEF2714C387000842D4 /* Zettel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2563CB042714C393000842D4 /* Build configuration list for PBXNativeTarget "Zettel" */;
+			buildPhases = (
+				D9F1CEF9C962A2211C06D405 /* [CP] Check Pods Manifest.lock */,
+				2563CAEC2714C387000842D4 /* Sources */,
+				2563CAED2714C387000842D4 /* Frameworks */,
+				2563CAEE2714C387000842D4 /* Resources */,
+				5CAEF599DA6CD1B7BEC40259 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zettel;
+			productName = Zettel;
+			productReference = 2563CAF02714C387000842D4 /* Zettel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2563CAE82714C386000842D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					2563CAEF2714C387000842D4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 2563CAEB2714C386000842D4 /* Build configuration list for PBXProject "Zettel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2563CAE72714C386000842D4;
+			productRefGroup = 2563CAF12714C387000842D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2563CAEF2714C387000842D4 /* Zettel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2563CAEE2714C387000842D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5276C892275BFC2D00186BBB /* TagCell.xib in Resources */,
+				520DC8A7276BB90F00E6716C /* GoogleService-Info.plist in Resources */,
+				2563CB002714C393000842D4 /* LaunchScreen.storyboard in Resources */,
+				2563CAFD2714C393000842D4 /* Assets.xcassets in Resources */,
+				5276C88F275BFC2C00186BBB /* TagCollectionViewCell.xib in Resources */,
+				520CAF7C2764FEB30001EB16 /* TagNotesCollectionViewCell.xib in Resources */,
+				9D41C2D3272E938100C19788 /* TagNote.xib in Resources */,
+				9D41C2C5272E7DEA00C19788 /* TagItem.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CAEF599DA6CD1B7BEC40259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zettel/Pods-Zettel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zettel/Pods-Zettel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zettel/Pods-Zettel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F1CEF9C962A2211C06D405 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zettel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2563CAEC2714C387000842D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5276C893275BFC2D00186BBB /* HeaderTextField.swift in Sources */,
+				5295F8DB2741B54B002DE3D8 /* Tag.swift in Sources */,
+				9D41C2C3272E7DA300C19788 /* TagMenuViewController.swift in Sources */,
+				2563CB082714C811000842D4 /* AppFactory.swift in Sources */,
+				9D41C2D2272E938100C19788 /* TagNote.swift in Sources */,
+				52DC97542742D8DF003C4E33 /* ColorManager.swift in Sources */,
+				5295F8DA2741B54B002DE3D8 /* TagManager.swift in Sources */,
+				2563CAF82714C387000842D4 /* NotesViewController.swift in Sources */,
+				2563CAF42714C387000842D4 /* AppDelegate.swift in Sources */,
+				5295F8D92741B54B002DE3D8 /* Note.swift in Sources */,
+				52009BA127638C8400485600 /* SaveWithUserDefaults.swift in Sources */,
+				5276C88D275BFC2C00186BBB /* TagCollectionViewController.swift in Sources */,
+				5276C88C275BFC2C00186BBB /* NoteViewController.swift in Sources */,
+				52E3878A27679B7000CEE45B /* LoginViewController.swift in Sources */,
+				52E3878D27679B8000CEE45B /* SettingsController.swift in Sources */,
+				5295F8D82741B54B002DE3D8 /* NoteManager.swift in Sources */,
+				520CAF7B2764FEB30001EB16 /* TagNotesCollectionViewCell.swift in Sources */,
+				5276C88E275BFC2C00186BBB /* TagCollectionViewCell.swift in Sources */,
+				5295F8DC2741B54B002DE3D8 /* testFile.swift in Sources */,
+				5276C891275BFC2D00186BBB /* TagCell.swift in Sources */,
+				5276C890275BFC2D00186BBB /* TagsDropDownMenu.swift in Sources */,
+				5295F8E02741B649002DE3D8 /* NotesService.swift in Sources */,
+				9D41C2CB272E7DFA00C19788 /* TagNotes.swift in Sources */,
+				9D41C2C7272E7DEF00C19788 /* TagItem.swift in Sources */,
+				52DC97532742D8DF003C4E33 /* Color.swift in Sources */,
+				5276C869275BCE1700186BBB /* TagCreator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2563CAFE2714C393000842D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2563CAFF2714C393000842D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2563CB022714C393000842D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2563CB032714C393000842D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2563CB052714C393000842D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716716278323CF7E86015BA1 /* Pods-Zettel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zettel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Parzjval.Zettel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2563CB062714C393000842D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0040E4343734B3D56CAD898 /* Pods-Zettel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zettel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Parzjval.Zettel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2563CAEB2714C386000842D4 /* Build configuration list for PBXProject "Zettel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2563CB022714C393000842D4 /* Debug */,
+				2563CB032714C393000842D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2563CB042714C393000842D4 /* Build configuration list for PBXNativeTarget "Zettel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2563CB052714C393000842D4 /* Debug */,
+				2563CB062714C393000842D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2563CAE82714C386000842D4 /* Project object */;
+}
